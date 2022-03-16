@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo JQuery</title>
+    <script type="text/javascript" src="js/jquery.js" ></script>
+    <script type="text/javascript" src="js/01-selectores.js"></script>
+    <style>
+        .zebra{
+            border: 5px dashed black;
+        }
+        .grande{
+            font-size: 50px;
+        }
+        .margenSuperior{
+            display: block;
+            margin-top: 50px;
+        }
+        .resaltado{
+            background-color: black;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendiendo JQuery en Udemy</h1>
+    <li>
+        <ul><a href="https://www.google.com.mx/" title="Google">Google</a></ul>
+        <ul><a href="https://www.facebook.com/" title="Facebook">Facebook</a></ul>
+    </li>
+    <p>Ejercicicios de Jquery</p>
+    <p id="rojo" class="leon">Esto será un elemento con background rojo</p>
+    <p id="amarillo" class="zebra">Esto será un elemento con background Amarillo</p>
+    <p id="verde" class="leon">Esto será un elemento con background Verde</p>
+    <p class="zebra">Soy un elemeonto sin propiedades en html</p>
+
+    <div id="caja">
+        <ul>
+            <li>Soy li 1</li>
+            <li class="resaltado" id="li2">Soy li 2</li>
+            <li>Soy li 3</li>
+        </ul>
+        <p class="resaltado">Esto es parte de la caja</p>
+    </div>
+
+</body>
+</html>
