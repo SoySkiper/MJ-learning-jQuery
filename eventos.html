@@ -16,7 +16,6 @@
             background: yellow;
             transition: 300ms all;
         }
-
         input{
             padding: 10px;
             width: 300px;
@@ -30,30 +29,37 @@
             margin-top: 10px;
             display: none;
         }
+        #sigueme{
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            display: block;
+            background: yellow;
+            opacity: 0.5;
+            border: 1px solid black;
+            border-radius: 50%;
+        }
+        body{
+            cursor: none;
+        }
         /***Eventos dentro de CSS que se realiza al pasar el mouse sobre el objeto
         #caja:hover{
-            
             background: red;
-            cursor: pointer;
-            
-        }       
-        **/
-        
+            cursor: pointer;  
+        }       **/
     </style>
 </head>
 <body>
     <h1>Aprendiendo JQuery y sus eventos</h1>
-
+    <div id="sigueme"></div>
     <form action="">
         <input type="text" id="nombre">
     </form>
     <div class="datos">
-
     </div>
     <br>
     <div id="caja">
         Soy una caja
     </div>
-    
 </body>
 </html>

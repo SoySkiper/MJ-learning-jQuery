@@ -59,7 +59,8 @@ $(document).ready(function(){
     datos.mouseup(function(){
         $(this).css('border-color', 'black');
     });
-
     //Mousemove
-
-})
+    $(document).mousemove(function(){
+        $('#sigueme').css('left', event.clientX).css('top',event.clientY);
+    });
+});
