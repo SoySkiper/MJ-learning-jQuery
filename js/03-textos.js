@@ -13,6 +13,7 @@ $(document).ready(function(){
         //.preprend su usa para insertar texto al principio del html
        menu.append('<li><a href="'+Link.val()+'"></a></li>');
        Link.val('');
+       
        reloadlink();
     });
     //Con jQuery se puede mezclar con el lenguaje de javascript en cualquier momento, 
