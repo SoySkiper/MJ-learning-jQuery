@@ -2,6 +2,7 @@ $(document).ready(function(){
     var caja = $('#caja');
     var mostrar = $('#mostrar');
     var ocultar = $('#ocultar');
+    var animacion = $('#animame');
 
     mostrar.hide();
 
@@ -35,9 +36,22 @@ $(document).ready(function(){
             caja.toggle('fast');
         });
     }
+    function animame(){
+        animacion.click(function(){
+            //left solo es para elementos de posicion absoluta
+            caja.animate({marginLeft: '500px',
+                        fontSize: '30px',
+                        opacity: '0.9',
+                        height: '54px',
+                        width: '350px',
+                        }, 'normal').css('text-align','center')
+                        .animate({borderRadius: '900px', marginTop: '150px'},'slow');
+        });
+    }
 
-    //MostrarDiv();
-    //OcultarDiv();
+    MostrarDiv();
+    OcultarDiv();
     TodoEnUno();
+    animame();
     
 });
