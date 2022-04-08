@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo JQuery UI</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.theme.min.css">
+    <script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/06-interface.js"></script>
+    <style>
+     .elemento{
+         height: 200px;
+         width: 300px;
+         background-color: blueviolet;
+         border-radius: 30px;
+         border: 3px solid red;
+     }
+     .lista-juegos li{
+         width: 80%;
+         padding: 20px;
+         border: 1px #ccc solid;
+         list-style: none;
+         cursor: pointer;
+     }
+    ul .ui-selecting{ background: white;}
+    ul .ui-selected{ background: red;}
+    #move {
+         height: 100px;
+         width: 100px;
+         border: 2px red solid;
+    }
+    #area{
+         height: 300px;
+         width: 300px;
+         border: 2px green solid;
+    }
+    .elemento{
+        background: pink;
+        float: none;
+        display: none;
+    }
+    </style>
+</head>
+<body>
+    <h1>Aprendiendo JQuery UI</h1>
+    <hr>
+    <h3 id="tool">Tooltip</h3>
+    <a href="#" title="Acceder a la sección de mi perfil desde este link">Mi perfil</a>
+    <a href="#" title="Accede a los contactos">Contacto</a>
+    <a href="#" title="Te cuento una breve biografía">Sobre mi</a>
+    <hr>
+    <h3>Calemdario - datePicker</h3>
+    <input type="text" id="calendario" placeholder="Fecha de nacimiento">
+    <hr>
+    <h3>Pestañas</h3>
+    <div id="pestanas">
+        <ul>
+            <li><a href="#tab-1">Primera pestaña</a></li>
+            <li><a href="#tab-2">Segunda pestaña</a></li>
+            <li><a href="#tab-3">Tercera pestaña</a></li>
+        </ul>
+        <div id="tab-1">Sit dolore adipisicing ex consequat anim exercitation amet. Magna nostrud fugiat esse tempor esse magna cupidatat labore amet sit dolor ea. Reprehenderit Lorem laborum mollit magna dolore veniam. Deserunt deserunt qui et occaecat et fugiat veniam cupidatat fugiat.</div>
+        <div id="tab-2">Dolor sit cupidatat sit consectetur magna duis aute et adipisicing. Fugiat consectetur anim laborum quis nisi ea amet cupidatat deserunt do commodo. Minim est quis cupidatat non labore cupidatat enim officia labore officia ullamco enim. Enim consequat Lorem mollit veniam dolor aliquip duis consequat esse elit exercitation. Commodo enim consequat consectetur culpa eiusmod exercitation magna cillum cupidatat sit. Reprehenderit exercitation culpa laborum excepteur Lorem nisi aliqua consequat elit eiusmod. Aliquip aliqua est magna commodo aute irure consectetur minim.</div>
+        <div id="tab-3">Adipisicing quis amet sunt ea consequat. Nisi aliqua ullamco eiusmod elit commodo do laboris anim. Dolore in reprehenderit est cupidatat. Laboris ad exercitation nostrud sint ullamco nisi ad amet laboris.</div>
+    </div>
+    <h3>Cuadros de dialogo - Popups</h3>
+    <button id="butPop">Abrir popup</button>
+    <div id="popup" title="¿Estás seguro?" style="display:none">
+        <p>Si continuas podrías perder todo</p>
+    </div>
+    <hr>
+
+    <button id="mostrar">Mostrar</button>
+    <div class="cajaEfectos elemento"></div>
+    <div id="move"></div>
+    <br>
+    <div id="area"></div>
+    <ul class="lista-juegos">
+        <li>Minecraft</li>
+        <li>Clash Royale</li>
+        <li>GTA</li>
+        <li>Call of Duty</li>
+    </ul>
+    
+    <div class="elemento">
+        Soy el elemento número 1
+    </div>
+    <div class="elemento">
+        Soy el elemento número 2
+    </div>
+    <div class="elemento">
+        Soy el elemento número 3
+    </div>
+</body>
+</html>
